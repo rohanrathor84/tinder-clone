@@ -1,0 +1,163 @@
+.onboarding-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.Onboarding__logo__container {
+  width: 140px;
+  margin: 0px 0px 0px 10px;
+  padding: 15px;
+}
+
+.Onboarding__logo {
+  width: 100%;
+  margin-left: -15px;
+  margin-top: -15px;
+}
+
+.onboarding__div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.on-boadring-heading {
+  text-align: center;
+}
+
+.on-boadring-form {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 800px) {
+  .on-boadring-form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+  }
+}
+
+.detail-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  width: 500px;
+}
+
+.your-name {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 18px;
+
+  .name {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .name input {
+    margin-top: 10px;
+  }
+}
+
+.heading__label,
+.show__gender {
+  margin: 18px 0px 10px 0px;
+}
+
+.show__gender input {
+  margin-right: 10px;
+}
+
+.onboarding__div form input {
+  padding: 15px 30px;
+  font-size: 15px;
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 10px;
+}
+
+.onboarding__div form input::-webkit-outer-spin-button,
+.onboarding__div form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0px;
+}
+
+.onboarding__div form .multiple__input__container {
+  display: flex;
+}
+
+.onboarding__div form .multiple__input__container input {
+  margin-right: 10px;
+}
+
+.onboarding__div form .multiple__input__container label {
+  padding: 10px;
+  border: 2px solid rgb(144, 144, 144);
+  border-radius: 10px;
+  transform: all 0.3s;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.onboarding__div form input[type="radio"] {
+  display: none;
+}
+
+.onboarding__div form input[type="number"] {
+  width: 10%;
+}
+
+.onboarding__div form input[type="submit"],
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
+.onboarding__div form input[type="radio"]:checked + label {
+  border: solid 2px rgb(221, 39, 22);
+}
+
+.onboarding__div form input[type="submit"]:hover {
+  background-color: rgb(235, 235, 235);
+}
+
+.onboarding__div form input[type="submit"]:active {
+  background-color: rgb(226, 115, 155);
+}
+
+.image-section {
+  margin-top: 38px;
+}
+
+.profile-picture-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 350px;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.add-profile-picture {
+  width: 100px;
+  height: 150px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.logout-btn {
+  font-size: 15px;
+  width: 40%;
+  margin-bottom: 20px;
+  border: 1px solid rgb(219, 219, 219);
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgb(235, 235, 235);
+  }
+}

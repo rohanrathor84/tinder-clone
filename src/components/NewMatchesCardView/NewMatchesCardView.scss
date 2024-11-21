@@ -1,0 +1,43 @@
+/* CardView.scss */
+.new-matches-card-view-container {
+  display: flex;
+  overflow-x: auto;
+  margin: 0px 10px;
+  padding: 10px 0px 10px 0px;
+  gap: 10px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+}
+
+.new-matches-card-view-container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for a cleaner look */
+}
+
+.new-matches-card-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 100px;
+  scroll-snap-align: start;
+  transition: transform 0.3s ease;
+  flex: 0 0 auto; /* Prevent shrinking */
+}
+
+.new-matches-card-view:hover {
+  transform: scale(1.05);
+}
+
+.new-matches-card-view-image {
+  width: 100px;
+  height: 150px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.new-matches-card-view-name {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+}

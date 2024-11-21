@@ -1,0 +1,42 @@
+.message_card_container {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.message_card_sub_container {
+}
+
+.seperator {
+  width: 100%;
+  border: 0.5px solid #ddd;
+  margin: 20px 0px;
+}
+
+.message_card_view {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.message_card_image {
+  height: 80px;
+  width: 80px;
+  border-radius: 80px;
+  object-fit: cover;
+}
+
+.message_card_name_view {
+  align-self: center;
+}
+
+.message_card_name {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.message_card_message {
+  font-size: 14px;
+  font-weight: 300;
+  color: #828282;
+}

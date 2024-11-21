@@ -1,0 +1,31 @@
+.matches_container {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.matches_header {
+  display: flex;
+  flex-direction: column;
+}
+
+.matches_sub_header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.seperator {
+  width: 100%;
+  border: 0.5px solid #ddd;
+}
+
+.new_matches_text {
+  margin-top: 30px;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.messages_text {
+  margin-top: 30px;
+  margin-left: 10px;
+  font-weight: bold;
+}
